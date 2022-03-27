@@ -32,7 +32,7 @@ function deleteDigit(n) {
         result.push(Number(item.join("")));
     }
 
-    return Math.max.apply(null, result);
+    return Math.max(...result);
 }
 module.exports = {
     deleteDigit,
